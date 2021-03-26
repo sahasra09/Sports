@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	
+<head>
+	<title>
+		Creating Search Bar using HTML
+		CSS and Javascript
+	</title>
+	
+	<!-- linking the stylesheet(CSS) -->
+	<link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+
+<body>
+	<text>*Here,you can type diffent sports,and , as you select a certain feild,a notice box,displaying,a short description of the sport,pops up</text>
+	<!-- input tag -->
+	<input id="searchbar" onkeyup="search_sports()" type="text"
+		name="search" placeholder="Search sports..">
+        <style>
+            .tooltip {
+              position: relative;
+              display: inline-block;
+              border-bottom: 1px dotted black;
+            }
+            
+            .tooltip .tooltiptext {
+              visibility: hidden;
+              width: 120px;
+              background-color: black;
+              color: #fff;
+              text-align: center;
+              border-radius: 6px;
+              padding: 5px 0;
+            
+              /* Position the tooltip */
+              position: absolute;
+              z-index: 1;
+            }
+            
+            .tooltip:hover .tooltiptext {
+              visibility: visible;
+            }
+            </style>
+	<!-- ordered list -->
+	<ol id='list'>
+		<li class="animals">Badminton</li>
+		<li class="animals">Cricket</li>
+		<li class="animals">Tennis</li>
+		<li class="animals">Skating</li>
+		<li class="animals">Archery</li>
+		<li class="animals">Rugby</li>
+		<li class="animals">Volleyball</li>
+		<li class="animals">Hockey</li>
+		<li class="animals">Boxing</li>
+        <li class="animals">Wrestling</li>
+        <div class="tooltip"><li >Table Tennis</li>
+            <span class="tooltiptext">Tooltip text</span>
+        </div>
+		
+    </ol>
+    
+	
+	<!-- linking javscript -->
+	<script src="./animals.js"></script>
+</body>
+
+</html>
